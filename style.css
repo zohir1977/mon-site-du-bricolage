@@ -1,0 +1,813 @@
+        
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow-x: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.height{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: #cf1414;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.height img {
+    display: block;
+    width: 130px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.height .resolution{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 45%;
+    top: 17px;
+    background-color: #3b3838;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 6px 6px 6px black;
+    color: white;
+}
+
+.height p{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.height h4{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 5px;
+    margin-right: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.links {
+    display: inline-block;
+    width: 33.33%;
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.links a:hover {
+    color: white;
+}
+
+header{
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    background-color: #000902;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    box-sizing: border-box;
+}
+
+.portrait-paragraphe{
+    margin-bottom: 46px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.portrait-paragraphe p {
+    color: white;
+    font-size: 4.5rem;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.portrait-paragraphe a {
+    border: 3px solid white;
+    padding: 8px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+header .portrait{
+    width: 400px;
+    height: auto;
+    margin-top: 180px;
+}
+
+header .portrait img {
+    width:100%;
+    height: auto;
+
+}
+
+.content{
+    width: 70%;
+    height: auto;
+    background: #ffffff;
+    margin: 0 auto;
+   
+}
+
+section .adage-arbre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%; 
+}
+
+
+section .adage-arbre img {
+    width: 100px;
+    height: auto;  
+    object-fit: cover;     
+}
+
+section .adage-arbre p {
+    float: right;
+    max-width: 400px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;        
+}
+
+            /* SEPARATEUR */
+
+.separateur {
+    width: 20%;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+        /* GRANDE IMAGE */
+
+section .grande-image {
+    margin-top: -30px;
+    width: 100%;
+    height: auto;
+}
+
+section .grande-image img {
+    width: 100%;
+    height: auto;
+}
+
+.voulez-vous {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    text-align: center; 
+}
+
+.voulez-vous p {
+    font-size: 150px;
+    font-weight: bold;
+    letter-spacing: -10px;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0;   
+}
+
+section main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 30px ;
+    width: 100%;
+    height: auto;
+}
+
+.bricole {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    margin-bottom: 80px;   
+}
+
+.bricole img {
+    width: 100%;
+    height: auto;
+    display: inline-block; 
+    padding-bottom: 10px;    
+}
+
+.bricole p {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 320px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* --------------- footer paragraphe et formulaire ---------------*/
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #000902;
+    justify-self: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#telephone{
+    display: none;
+}
+
+footer p {
+    text-align: center;
+    font-size: 25px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+#ordinateur{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px 20px;
+    width: 70%;
+    margin: 40px auto;
+}
+
+#ordinateur .item {
+    width: 100%;
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+}
+
+#ordinateur label {
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+#ordinateur input {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+#ordinateur textarea {
+  display: block;
+  width: 87%;
+  height: 150px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+[class^="item"]:nth-child(1){
+   
+}
+
+[class^="item"]:nth-child(2){
+  
+}
+
+[class^="item"]:nth-child(3){
+  
+}
+
+
+[class^="item"]:nth-child(4){
+  
+}
+
+[class^="item"]:nth-child(5){
+    grid-column: 1 / 3;
+    width: 100%;
+
+}
+
+[class^="item"]:nth-child(6){
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+[class^="item"]:nth-child(6) button{
+    font-size: 18px;
+    padding: 10px 25px;
+    margin: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #cf1414;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* --------------- footer barre, emblème et réseaux sociaux ---------------*/
+div.barre {
+    width: 100%;
+    height: 2px;
+    background-color: #3b3838;;
+}
+
+.icone-reseau-sociaux{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.icone-reseau-sociaux .icone img {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.reseau-sociaux {
+    display: flex;
+}
+
+.facebook, .instagram, .x{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.facebook img  {
+    width: 70px;
+    height: auto;
+    padding-top: 15px;
+}
+
+.instagram img{
+    width: 40px;
+    height: auto;
+}
+
+                
+                    /* ------ RESPONSIVE DESIGN ---------------*/
+
+           @media screen and (max-width: 1442px ) {
+            .portrait-paragraphe{
+                margin-bottom: 46px;
+                margin-left: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+            }
+            .portrait-paragraphe p {
+                color: white;
+                font-size: 3.9rem;
+                letter-spacing: -2px;
+                margin-bottom: 30px;
+            }
+
+            .voulez-vous p {
+                font-size: 100px;
+                font-weight: bold;
+                letter-spacing: -10px;
+                text-align: center;
+                padding-top: 40px;
+                margin: 0;   
+            }
+           }
+
+           
+           @media screen and (max-width: 1338px ) {
+                    
+            header{
+                margin-top: 70px;
+                width: 100%;
+                height: auto;
+                background-color: #000902;
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 500px;
+                box-sizing: border-box;
+
+            }
+            .portrait-paragraphe{
+                width: 100%;
+                height: auto;
+                margin-bottom: 0;
+                margin-left: auto;
+                padding-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+            }
+            .portrait-paragraphe p {
+                color: white;
+                font-size: 2.9rem;
+                letter-spacing: -2px;
+                margin-bottom: 30px;
+            }
+
+            
+            .portrait-paragraphe a {
+                border: 3px solid white;
+                padding: 8px 20px;
+                font-size: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                margin-bottom: 10px;
+                z-index: 2;
+            }
+
+            header .portrait{
+                width: 320px;
+                height: auto;
+                margin-top: 180px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            header .portrait img {
+                width:100%;
+                height: auto;
+
+            }
+            .voulez-vous p {
+                font-size: 100px;
+                font-weight: bold;
+                letter-spacing: -10px;
+                text-align: center;
+                padding-top: 40px;
+                margin: 0;   
+            }
+        }
+            @media screen and (max-width: 1220px){
+                .content{
+                    width: 70%;
+                    height: auto;
+                    background: #ffffff;
+                    margin: 0 auto;
+                }
+
+                .voulez-vous {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 30px 0;
+                    text-align: center;  
+                }
+
+                .voulez-vous p {
+                    margin: 0 ;
+                    font-size: 70px;
+                    font-weight: bold;
+                    letter-spacing: -3px;
+                    text-align: center;
+                    padding-top: 40px;  
+                }
+                
+                
+            }
+
+            @media screen and (max-width: 1096px){
+                header {
+                    display: grid;
+                    grid-template-columns: 2fr 400px;
+                    width: 100%;
+                    height: auto;
+                }
+               
+            }
+
+            @media screen and (max-width: 992px){
+                .portrait-paragraphe p {
+                    color: white;
+                    font-size: 2.3rem;
+                    letter-spacing: -2px;
+                    margin-bottom: 30px;
+                }
+            }
+            @media screen and (max-width: 841px){
+                .portrait-paragraphe p {
+                    color: white;
+                    font-size: 1.9rem;
+                    letter-spacing: -2px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            
+
+            
+              /* ------------  VERSION TELEPHONE ----------------*/
+                  
+
+            @media screen and (max-width: 768px) {
+                .height{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .height img {
+                    width: 110px;
+                    height: auto;
+                    display: block;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+
+                .height .resolution {
+                    display: none;
+                }
+
+                .height .links {
+                    display: none;
+                }
+
+                header {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    height: auto;
+                    margin-top: 60px;
+                }
+
+                header .portrait-paragraphe {
+                    margin-top: 0;
+                    padding: 0;
+                 }
+
+                .portrait-paragraphe p {
+                    color: white;
+                    font-size: 1.6rem;
+                    letter-spacing: 1-px;
+                    margin-bottom: 20px;
+                    margin-top: 0;
+                }
+
+                .portrait-paragraphe a {
+                    border: 2px solid white;
+                    padding: 8px 20px;
+                    font-size: 12px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    margin-bottom: 20px;
+                    z-index: 2;
+                }
+
+                header .portrait{
+                    width: 250px;
+                    height: auto;
+                    margin-top: 50px;
+                }       
+
+                header .portrait img {
+                    width:100%;
+                    height: auto;
+                }
+
+                .content{
+                    width: 100%;
+                    height: auto;
+                    background: #ffffff;
+                    margin: 0 auto;
+                }
+        
+                section .adage-arbre {
+                    display: grid;
+                    grid-template-columns: 90px 1fr;
+                    margin-top: 40px;
+                    width: 100%; 
+                }
+                
+                section .adage-arbre img {
+                    width: 80px;
+                    height: auto;  
+                    object-fit: cover;     
+                }
+
+                section .adage-arbre p {
+                    float: right;
+                    max-width: 300px;
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4;        
+                }
+
+                .voulez-vous {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 40px;
+                    text-align: center; 
+                }
+                
+                .voulez-vous p {
+                    font-size: 25px;
+                    font-weight: bold;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    padding-top: 5px;
+                    margin: 0;   
+                }
+
+                section main{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 30px 30px ;
+                    width: 100%;
+                    height: auto;
+                }
+
+                .bricole {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    width: 90%;
+                    height: auto;
+                    padding: 10px;
+                    margin-bottom: 80px; 
+                    box-sizing: border-box;  
+                }
+
+                .bricole p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    max-width: 320px;
+                    text-align: center;
+                    margin: 20px auto;
+                }
+
+                footer {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000902;
+                    margin-top: 30px;
+                }
+
+                footer p{
+                    color: white;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding-top: 30px;
+                    font-size: 18px;
+                    max-width: 650px;
+                }
+
+                #ordinateur {
+                    display: none;
+                } 
+
+
+                      /* ------------ FORMULAIRE TELEPHONE------------*/               
+
+                #telephone{
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;  
+                   color: white;
+                   width: 100%;
+                   margin: 20px auto;
+                   box-sizing: border-box;
+                }
+
+                #telephone .cells {
+                    margin: 0 ;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+
+
+                #telephone label  {
+                    margin-left: 5%;
+                    font-size: 20px;
+                }
+
+                #telephone input {
+                    display: block;
+                    width: 80%;
+                    height: auto;
+                    font-size: 18px;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    margin-left: 5%;
+                    margin-top: 5px;
+                }
+
+                #telephone #message{
+                    display: block;
+                    width: 80%;
+                    height: 150px;
+                    font-size: 18px;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 6px;
+                    margin-top: 4px;
+                    margin-left: 5%;
+                }
+
+                #telephone .bouton {
+                    text-align: center;
+                    margin-top: 15px;
+                    padding: 15px 0px ;
+                }
+
+                #telephone .bouton button {
+                    font-size: 22px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 8px 40px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #cf1414;
+                    color: white;
+                }
+
+
+              
+
+              
+
+               
+            
+                
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+     
